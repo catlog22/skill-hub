@@ -4,8 +4,8 @@ A collection of reusable Claude Code skills for enhanced development workflows.
 
 ## Overview
 
-- **Skills**: 3
-- **Categories**: 2
+- **Skills**: 6
+- **Categories**: 3
 - **Last Updated**: 2026/2/24
 
 ## Quick Start
@@ -30,7 +30,10 @@ Skills are automatically detected when placed in the `~/.ccw/skills/` directory.
 |----|------|----------|-------------|------|
 | `copyright-docs` | Copyright Docs | Documentation | Generate software copyright design specification document... | `copyright-docs` `generate` `software` `copyright` |
 | `project-analyze` | Project Analyze | Analysis | Multi-phase iterative project analysis with Mermaid diagr... | `project-analyze` `multi-phase` `iterative` `project` |
+| `skill-generator` | Skill Generator | General | Meta-skill for creating new Claude Code skills with confi... | `skill-generator` `meta-skill` `creating` `claude` |
+| `skill-tuning` | Skill Tuning | General | Universal skill diagnosis and optimization tool. Detect a... | `skill-tuning` `universal` `skill` `diagnosis` |
 | `software-manual` | Software Manual | Documentation | Generate interactive TiddlyWiki-style HTML software manua... | `software-manual` `generate` `interactive` `tiddlywiki-style` |
+| `workflow-skill-designer` | Workflow Skill Designer | General | Meta-skill for designing orchestrator+phases structured w... | `workflow-skill-designer` `meta-skill` `designing` `orchestratorphases` |
 
 ## Detailed Skill List
 
@@ -66,6 +69,36 @@ Generate interactive TiddlyWiki-style HTML software manuals with screenshots, AP
 - **Version**: 1.0.0
 - **Tags**: `software-manual` `generate` `interactive` `tiddlywiki-style` `html` `software` `manuals` `screenshots`
 - **Path**: `skills/software-manual`
+
+
+### General
+
+#### Skill Generator
+
+Meta-skill for creating new Claude Code skills with configurable execution modes. Supports sequential (fixed order) and autonomous (stateless) phase patterns. Use for skill scaffolding, skill creation
+
+- **ID**: `skill-generator`
+- **Version**: 1.0.0
+- **Tags**: `skill-generator` `meta-skill` `creating` `claude` `code` `skills` `configurable` `execution`
+- **Path**: `skills/skill-generator`
+
+#### Skill Tuning
+
+Universal skill diagnosis and optimization tool. Detect and fix skill execution issues including context explosion, long-tail forgetting, data flow disruption, and agent coordination failures. Support
+
+- **ID**: `skill-tuning`
+- **Version**: 1.0.0
+- **Tags**: `skill-tuning` `universal` `skill` `diagnosis` `optimization` `tool` `detect` `execution`
+- **Path**: `skills/skill-tuning`
+
+#### Workflow Skill Designer
+
+Meta-skill for designing orchestrator+phases structured workflow skills. Creates SKILL.md coordinator with progressive phase loading, TodoWrite patterns, and data flow. Triggers on "design workflow sk
+
+- **ID**: `workflow-skill-designer`
+- **Version**: 1.0.0
+- **Tags**: `workflow-skill-designer` `meta-skill` `designing` `orchestratorphases` `structured` `workflow` `skills` `creates`
+- **Path**: `skills/workflow-skill-designer`
 
 
 

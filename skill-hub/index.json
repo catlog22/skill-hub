@@ -1,66 +1,120 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-02-24T05:10:00Z",
+  "updated_at": "2026-02-24T05:18:54.668Z",
   "skills": [
     {
       "id": "copyright-docs",
       "name": "Copyright Docs",
-      "description": "Generate software copyright design specification documents compliant with China Copyright Protection Center (CPCC) standards. Creates complete design documents with Mermaid diagrams based on source code analysis.",
+      "description": "Generate software copyright design specification documents compliant with China Copyright Protection Center (CPCC) standards. Creates complete design documents with Mermaid diagrams based on source co",
       "version": "1.0.0",
       "author": "CCW Team",
       "category": "Documentation",
-      "tags": ["copyright", "license", "documentation", "cpcc"],
+      "tags": [
+        "copyright-docs",
+        "generate",
+        "software",
+        "copyright",
+        "design",
+        "specification",
+        "documents",
+        "compliant"
+      ],
       "path": "skills/copyright-docs"
     },
     {
       "id": "project-analyze",
       "name": "Project Analyze",
-      "description": "Multi-phase iterative project analysis with Mermaid diagrams. Generates architecture reports, design reports, and method analysis reports for codebase understanding.",
+      "description": "Multi-phase iterative project analysis with Mermaid diagrams. Generates architecture reports, design reports, method analysis reports. Use when analyzing codebases, understanding project structure, re",
       "version": "1.0.0",
       "author": "CCW Team",
       "category": "Analysis",
-      "tags": ["analysis", "architecture", "mermaid", "codebase"],
+      "tags": [
+        "project-analyze",
+        "multi-phase",
+        "iterative",
+        "project",
+        "analysis",
+        "mermaid",
+        "diagrams",
+        "generates"
+      ],
       "path": "skills/project-analyze"
+    },
+    {
+      "id": "skill-generator",
+      "name": "Skill Generator",
+      "description": "Meta-skill for creating new Claude Code skills with configurable execution modes. Supports sequential (fixed order) and autonomous (stateless) phase patterns. Use for skill scaffolding, skill creation",
+      "version": "1.0.0",
+      "author": "CCW Team",
+      "category": "General",
+      "tags": [
+        "skill-generator",
+        "meta-skill",
+        "creating",
+        "claude",
+        "code",
+        "skills",
+        "configurable",
+        "execution"
+      ],
+      "path": "skills/skill-generator"
+    },
+    {
+      "id": "skill-tuning",
+      "name": "Skill Tuning",
+      "description": "Universal skill diagnosis and optimization tool. Detect and fix skill execution issues including context explosion, long-tail forgetting, data flow disruption, and agent coordination failures. Support",
+      "version": "1.0.0",
+      "author": "CCW Team",
+      "category": "General",
+      "tags": [
+        "skill-tuning",
+        "universal",
+        "skill",
+        "diagnosis",
+        "optimization",
+        "tool",
+        "detect",
+        "execution"
+      ],
+      "path": "skills/skill-tuning"
     },
     {
       "id": "software-manual",
       "name": "Software Manual",
-      "description": "Generate interactive TiddlyWiki-style HTML software manuals with screenshots, API docs, and multi-level code examples for user guides and documentation.",
+      "description": "Generate interactive TiddlyWiki-style HTML software manuals with screenshots, API docs, and multi-level code examples. Use when creating user guides, software documentation, or API references. Trigger",
       "version": "1.0.0",
       "author": "CCW Team",
       "category": "Documentation",
-      "tags": ["manual", "documentation", "tiddlywiki", "api"],
+      "tags": [
+        "software-manual",
+        "generate",
+        "interactive",
+        "tiddlywiki-style",
+        "html",
+        "software",
+        "manuals",
+        "screenshots"
+      ],
       "path": "skills/software-manual"
     },
     {
       "id": "workflow-skill-designer",
       "name": "Workflow Skill Designer",
-      "description": "Meta-skill for designing orchestrator+phases structured workflow skills. Creates SKILL.md with orchestrator and phase definitions.",
+      "description": "Meta-skill for designing orchestrator+phases structured workflow skills. Creates SKILL.md coordinator with progressive phase loading, TodoWrite patterns, and data flow. Triggers on \"design workflow sk",
       "version": "1.0.0",
       "author": "CCW Team",
-      "category": "Development",
-      "tags": ["meta-skill", "skill-design", "workflow", "orchestrator"],
+      "category": "General",
+      "tags": [
+        "workflow-skill-designer",
+        "meta-skill",
+        "designing",
+        "orchestratorphases",
+        "structured",
+        "workflow",
+        "skills",
+        "creates"
+      ],
       "path": "skills/workflow-skill-designer"
-    },
-    {
-      "id": "skill-tuning",
-      "name": "Skill Tuning",
-      "description": "Universal skill diagnosis and optimization tool. Detect and fix skill execution issues with automated analysis.",
-      "version": "1.0.0",
-      "author": "CCW Team",
-      "category": "Development",
-      "tags": ["diagnosis", "optimization", "debugging", "skill"],
-      "path": "skills/skill-tuning"
-    },
-    {
-      "id": "skill-generator",
-      "name": "Skill Generator",
-      "description": "Meta-skill for creating new Claude Code skills with configurable execution modes. Supports analysis and write modes.",
-      "version": "1.0.0",
-      "author": "CCW Team",
-      "category": "Development",
-      "tags": ["meta-skill", "generator", "skill-creation", "automation"],
-      "path": "skills/skill-generator"
     }
   ]
 }
