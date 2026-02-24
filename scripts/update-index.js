@@ -14,7 +14,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT_DIR = path.join(__dirname, '..');
-const SKILLS_DIR = path.join(ROOT_DIR, 'skills');
+const SKILLS_DIR = path.join(ROOT_DIR, '.claude', 'skills');
 const INDEX_FILE = path.join(ROOT_DIR, 'skill-hub', 'index.json');
 
 // Parse command line args
