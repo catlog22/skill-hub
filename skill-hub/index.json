@@ -1,57 +1,62 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-02-24T03:30:00Z",
+  "updated_at": "2026-02-24T04:57:41.103Z",
   "skills": [
     {
-      "id": "code-review-helper",
-      "name": "Code Review Helper",
-      "description": "Assists with code review by analyzing patterns and suggesting improvements",
-      "version": "1.2.0",
-      "author": "CCW Team",
-      "category": "Code Quality",
-      "tags": ["review", "quality", "analysis", "best-practices"],
-      "downloadUrl": "https://raw.githubusercontent.com/catlog22/skill-hub/main/skills/code-review-helper/skill.tar.gz",
-      "readmeUrl": "https://raw.githubusercontent.com/catlog22/skill-hub/main/skills/code-review-helper/README.md"
-    },
-    {
-      "id": "test-skill",
-      "name": "Test Skill",
-      "description": "A test skill to verify the Skill Hub functionality",
+      "id": "copyright-docs",
+      "name": "Copyright Docs",
+      "description": "Generate software copyright design specification documents compliant with China Copyright Protection Center (CPCC) standards. Creates complete design documents with Mermaid diagrams based on source co",
       "version": "1.0.0",
       "author": "CCW Team",
-      "category": "Development",
-      "tags": ["test", "demo", "utility"],
-      "downloadUrl": "https://raw.githubusercontent.com/catlog22/skill-hub/main/skills/test-skill/skill.tar.gz",
-      "readmeUrl": "https://raw.githubusercontent.com/catlog22/skill-hub/main/skills/test-skill/README.md"
+      "category": "Documentation",
+      "tags": [
+        "copyright-docs",
+        "generate",
+        "software",
+        "copyright",
+        "design",
+        "specification",
+        "documents",
+        "compliant"
+      ],
+      "path": "skills/copyright-docs"
     },
     {
       "id": "project-analyze",
       "name": "Project Analyze",
-      "description": "Comprehensive project analysis with architecture review, dependency mapping, and code quality assessment",
+      "description": "Multi-phase iterative project analysis with Mermaid diagrams. Generates architecture reports, design reports, method analysis reports. Use when analyzing codebases, understanding project structure, re",
       "version": "1.0.0",
       "author": "CCW Team",
       "category": "Analysis",
-      "tags": ["analysis", "architecture", "dependencies", "quality"],
+      "tags": [
+        "project-analyze",
+        "multi-phase",
+        "iterative",
+        "project",
+        "analysis",
+        "mermaid",
+        "diagrams",
+        "generates"
+      ],
       "path": "skills/project-analyze"
-    },
-    {
-      "id": "copyright-docs",
-      "name": "Copyright Docs",
-      "description": "Generate copyright documentation and license compliance reports",
-      "version": "1.0.0",
-      "author": "CCW Team",
-      "category": "Documentation",
-      "tags": ["copyright", "license", "documentation", "compliance"],
-      "path": "skills/copyright-docs"
     },
     {
       "id": "software-manual",
       "name": "Software Manual",
-      "description": "Generate comprehensive software manuals and user documentation",
+      "description": "Generate interactive TiddlyWiki-style HTML software manuals with screenshots, API docs, and multi-level code examples. Use when creating user guides, software documentation, or API references. Trigger",
       "version": "1.0.0",
       "author": "CCW Team",
       "category": "Documentation",
-      "tags": ["manual", "documentation", "user-guide", "technical-writing"],
+      "tags": [
+        "software-manual",
+        "generate",
+        "interactive",
+        "tiddlywiki-style",
+        "html",
+        "software",
+        "manuals",
+        "screenshots"
+      ],
       "path": "skills/software-manual"
     }
   ]
