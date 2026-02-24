@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-02-23T15:30:00Z",
+  "updated_at": "2026-02-24T03:30:00Z",
   "skills": [
     {
       "id": "code-review-helper",
@@ -23,6 +23,36 @@
       "tags": ["test", "demo", "utility"],
       "downloadUrl": "https://raw.githubusercontent.com/catlog22/skill-hub/main/skills/test-skill/skill.tar.gz",
       "readmeUrl": "https://raw.githubusercontent.com/catlog22/skill-hub/main/skills/test-skill/README.md"
+    },
+    {
+      "id": "project-analyze",
+      "name": "Project Analyze",
+      "description": "Comprehensive project analysis with architecture review, dependency mapping, and code quality assessment",
+      "version": "1.0.0",
+      "author": "CCW Team",
+      "category": "Analysis",
+      "tags": ["analysis", "architecture", "dependencies", "quality"],
+      "path": "skills/project-analyze"
+    },
+    {
+      "id": "copyright-docs",
+      "name": "Copyright Docs",
+      "description": "Generate copyright documentation and license compliance reports",
+      "version": "1.0.0",
+      "author": "CCW Team",
+      "category": "Documentation",
+      "tags": ["copyright", "license", "documentation", "compliance"],
+      "path": "skills/copyright-docs"
+    },
+    {
+      "id": "software-manual",
+      "name": "Software Manual",
+      "description": "Generate comprehensive software manuals and user documentation",
+      "version": "1.0.0",
+      "author": "CCW Team",
+      "category": "Documentation",
+      "tags": ["manual", "documentation", "user-guide", "technical-writing"],
+      "path": "skills/software-manual"
     }
   ]
 }
