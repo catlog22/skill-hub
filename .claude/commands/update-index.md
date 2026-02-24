@@ -1,3 +1,10 @@
+---
+name: update-index
+description: Scan skills directory and update skill-hub/index.json
+argument-hint: "[--dry-run] [--verbose]"
+allowed-tools: Bash(*), Read(*), Write(*)
+---
+
 # Update Skill Index
 
 Scan the skills directory and update the skill-hub/index.json file.
@@ -11,25 +18,14 @@ Scan the skills directory and update the skill-hub/index.json file.
 ## Options
 
 - `--dry-run`: Show changes without writing to file
-- `--verbose`: Show detailed output including each skill found
+- `--verbose`: Show detailed output
 
-## Instructions
+## Execution
 
-Execute the update-index.js script:
+Run the script:
 
 ```bash
 node scripts/update-index.js $ARGUMENTS
 ```
 
-After running, report:
-- Number of skills found
-- Skills added/removed (if any)
-- Path to updated file
-
-## What it does
-
-1. Scans `skills/` directory for subdirectories
-2. Parses `SKILL.md` frontmatter in each skill directory
-3. Extracts metadata: name, description, version, tags
-4. Auto-detects category based on skill ID and tags
-5. Updates `skill-hub/index.json` with sorted skill list
+Report the number of skills found and any changes.

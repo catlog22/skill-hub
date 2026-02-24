@@ -1,3 +1,10 @@
+---
+name: sync-all
+description: Update index.json and README.md, then commit and push
+argument-hint: "[commit-message]"
+allowed-tools: Bash(*), Read(*), Write(*)
+---
+
 # Sync All
 
 Update both index.json and README.md, then commit and push changes.
@@ -12,33 +19,10 @@ Update both index.json and README.md, then commit and push changes.
 
 - `commit-message` (optional): Custom commit message. Default: "chore: sync skill index and README"
 
-## Instructions
+## Execution Steps
 
-Execute the following steps:
+1. Update index.json: `node scripts/update-index.js`
+2. Update README.md: `node scripts/update-readme.js`
+3. Commit and push if changes exist
 
-1. **Update index.json**
-   ```bash
-   node scripts/update-index.js
-   ```
-
-2. **Update README.md**
-   ```bash
-   node scripts/update-readme.js
-   ```
-
-3. **Check for changes**
-   ```bash
-   git status --porcelain
-   ```
-
-4. **If changes exist, commit and push**
-   ```bash
-   git add skill-hub/index.json README.md
-   git commit -m "${ARGUMENTS:-chore: sync skill index and README}"
-   git push origin $(git rev-parse --abbrev-ref HEAD)
-   ```
-
-Report the results:
-- Skills updated
-- Files changed
-- Commit hash (if committed)
+$ARGUMENTS
