@@ -1,6 +1,6 @@
 ---
 name: update-readme
-description: Generate README.md from skill-hub/index.json
+description: Generate README.md from index.json
 argument-hint: "[--dry-run]"
 allowed-tools: Bash(*), Read(*), Write(*)
 ---

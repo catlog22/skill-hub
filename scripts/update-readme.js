@@ -14,7 +14,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT_DIR = path.join(__dirname, '..');
-const INDEX_FILE = path.join(ROOT_DIR, 'skill-hub', 'index.json');
+const INDEX_FILE = path.join(ROOT_DIR, 'index.json');
 const README_FILE = path.join(ROOT_DIR, 'README.md');
 
 // Parse command line args
@@ -99,7 +99,7 @@ A collection of reusable Claude Code skills for enhanced development workflows.
 git clone https://github.com/catlog22/skill-hub.git
 
 # Copy skill to your CCW skills directory
-cp -r skill-hub/skills/<skill-id> ~/.ccw/skills/
+cp -r skill-hub/.claude/skills/<skill-id> ~/.claude/skills/
 \`\`\`
 
 ### Use in Claude Code
@@ -118,7 +118,7 @@ ${generateCategorySections(index.skills)}
 
 ### Add a New Skill
 
-1. Create a new directory in \`skills/\` with your skill ID
+1. Create a new directory in \`.claude/skills/\` with your skill ID
 2. Add a \`SKILL.md\` file with frontmatter:
 
 \`\`\`yaml
@@ -144,12 +144,13 @@ allowed-tools: Task, Read, Write, Bash
 
 \`\`\`
 skill-hub/
-├── skill-hub/
-│   └── index.json       # Skill registry
-├── skills/
-│   ├── project-analyze/ # Project analysis skill
-│   ├── copyright-docs/  # Copyright documentation skill
-│   └── software-manual/ # Software manual skill
+├── index.json           # Skill registry
+├── .claude/
+│   ├── commands/        # Slash commands
+│   └── skills/          # Skill definitions
+│       ├── project-analyze/
+│       ├── copyright-docs/
+│       └── software-manual/
 ├── scripts/
 │   ├── update-index.js  # Index generator
 │   ├── update-readme.js # README generator

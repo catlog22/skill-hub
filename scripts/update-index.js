@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Auto-update skill-hub/index.json by scanning skills directory
+ * Auto-update index.json by scanning skills directory
  *
  * Usage:
  *   node scripts/update-index.js [--dry-run] [--verbose]
@@ -15,7 +15,7 @@ const path = require('path');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const SKILLS_DIR = path.join(ROOT_DIR, '.claude', 'skills');
-const INDEX_FILE = path.join(ROOT_DIR, 'skill-hub', 'index.json');
+const INDEX_FILE = path.join(ROOT_DIR, 'index.json');
 
 // Parse command line args
 const args = process.argv.slice(2);
@@ -196,7 +196,7 @@ function scanSkills() {
       author: 'CCW Team',
       category,
       tags,
-      path: `skills/${skillId}`
+      path: `.claude/skills/${skillId}`
     };
 
     skills.push(entry);
